@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage[portuguese]{babel}
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\title{Pandemia na Austrália - Modelagem Matemática dos dados epidemiológicos da COVID-19.}
+\author{Gustavo Hermano Gusmão de Souza \\ gustavohermano3@gmail.com}
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\section{Introdução}
+
+\label{intro}
+
+Austrália é um país que fica localizado na Oceania e possui cerca de 25.649.985  de habitantes. O país possui uma área com  7.741.220 Km² de extensão, tendo uma densidade populacional de aproximadamente 3,22 hab/km².
+
+O país é divido em seis estados e dois território, sendo os três mais populosos New South Wales (NSW), Victoria e Queensland, com cerca de 8.157.700, 6.689.400 e 5.160.000 milhões de habitantes, respectivamente.   
+
+Em meio a crise sanitária causada pela pandemia do novo \textit{coronavírus} no mundo, a Austrália se vê em uma situação atípica para o país que é a recessão econômica. A crise na Austrália, assim como no mundo todo, passa a não ser somente uma crise sanitária e começa a impactar outros setores, como turismo, energia, comércio internacional e o maior deles é o setor da economia. Ao logo de três décadas a Austrália vem crescendo economicamente e se vê obrigada a frear esse crescimento e começar a impedir que estragos maiores da crise sanitária no país prejudicassem a vida da população australiana. 
+
+De acordo com Chang et al. (2020), a Austrália experimentou a maioria desses efeitos. O número de casos confirmados da COVID-19, ultrapassou 1.000 casos no dia 21 de março de 2020, e dobrando os números de casos em três dias. 
+
+A partir disso, o governo australiano impôs uma série de medidas para evitar uma alta propagação do novo coronavírus. E este enfrentamento têm dado resultados positivos em relação a preservação de vidas e um número de infectados controlado.
+
+Segundo Rockett et al. (2020) o governo australiano introduziu medidas progressivas de mitigação de epidemia a partir de 23 de março de 2020 para limitar as interações sociais, reduzir a propagação do vírus e prevenir as transmissões. Houve uma ampla realização de testes no estado de  NSW, com 1.541 testes realizados por cada 100.000 habitantes, sendo esta como uma das medidas anunciadas no estado.
+
+Segundo informações descritas no site do governo do estado de NSW, foram realizados até o dia de 26 de setembro de 2020 um total de 2.672.392 testes com 4.029 casos de COVID-19 confirmados. Mas, o estado de Victoria que é o segundo estado mais populoso da Austrália, é onde se concentra a maior parte dos casos superando até então a marca de 20.000 casos. Neste, já foram realizados 2.661.989 milhões de testes.
+
+Informações coletadas do próprio site do ministério da saúde do Governo australiano, descreve que sistema de saúde na Austrália é concebido por uma parceria público-privada por meio do programa \textit{Medicare}. O Medicare é o programa de seguro desaúde universal da Austrália. Assegura a toda população australiana, e também boa parte dos visitantes estrangeiros, acesso a uma ampla gama de serviços de saúde e hospitalares a um custo baixo ou gratuito. 
+
+\section{Resumos}
+
+\begin{center}
+	\textbf{Artigo:} Modelling transmission and control of the COVID-19 pandemic in Australia
+\end{center}
+
+O artigo desenvolve baseando-se em um modelo com um agente de simulação computacional refinando casos da COVID-19 em progresso na Austrália. O modelo é regulado para reproduzir principais características da transmissão da Covid-19. 
+
+Aplicação do modelo serve de comparação de várias medidas tomadas pelo Governo, Estado e população. Com isso, é possível mensurar os benefícios das medidas e o quão positivo elas se tornam. Por exemplo, restrições a viagens aéreas internacionais, isolamento de casos, fechamento de escolas, quarentena domiciliar, são medidas analisadas no modelo. 
+
+\begin{center}
+	\textbf{Artigo:} Stemming the flow: how much can the
+	Australian smartphone app help to control
+	COVID-19?
+\end{center}   
+
+O artigo descreve como um aplicativo lançado pelo Governo australiano pode interferir e diminuir a propagação do novo coronavírus. O \textit{\textbf{COVIDSafe app}} é um aplicativo que pode ser instalado em smartphone com sistemas Android e IOS, e ajuda a identificar pessoas que foram expostas ao coronavírus. 
+
+O estudo sobre o aplicativo foi desenvolvido por meio de um modelo de sistemas dinâmicos. Eles levaram em consideração a forma que o coronavírus se propagava no país, processos de localização de casos e fatores que afetem a população a aceitação do aplicativo. 
+
+O modelo de sistema dinâmico proposto 
+teve uma estrutura dividido entre pessoas exposta-infectada-recuperada, utilizando dados da pandemia e informações divulgadas no país sobre o comportamento do vírus e, assim, determinar
+valores de parâmetro. 
+
+Para o modelo aplicado, foram examinados os fatores que influenciavam certas tendências projetadas, como o aumento do teste viral no país, a participação da comunidade nas redes sociais, 
+distanciamento social entre a população, e o nível de adesão ao aplicativo COVIDSafe.
+
+Dos resultados obtidos com a pesquisa foi que uma provável segunda onda da COVID-19 ocorrerá se o distanciamento social diminuir e a taxa de teste também diminuir. A intensidade dessa segunda onda também dependerá de como será a taxa de redução do distanciamento social e de testagem. 
+
+Ao final, o trabalho conclui que a manutenção do distanciamento social, a ampliação em grande escala de teste para a COVID-19 são aliados com resultados favoráveis para a redução de casos. O COVIDSafe tem também potencial de ser um complemento importante para testes de COVID-19 e também como contribuir com o distanciamento social. Dependendo do nível de aceitação do aplicativo pela comunidade, ele poderia ter
+um efeito mitigador significativo em uma segunda onda de COVID-19 na Austrália.
+
+\section{Metodologia}
+O número de casos acumulados de COVID-19 no início da pandemia teve um crescimento similar ao de uma função exponencial. Porém, com o tempo, o número de casos novos tendem a se estabilizar, e permanecer a um valor constante. Além disso, conforme a doença se espalha e medidas de isolamento social ou outras medidas que impeçam a evolução da doença começam a serem tomadas, haverá uma tendência de que os valores desacelerarem muito mais rápido e que voltem a acelerar se medidas de contenção forem flexibilizadas em um momento inoportuno.
+
+Há um modelo matemático que descreve o crescimento populacional, chamado de \textit{\textbf{modelo logístico}}. Esse modelo poderá descrever melhor como o coronavírus se comporta no decorre do tempo. 
+
+Definiremos P(t) o número de pessoas infectadas em função do tempo, tal que:
+
+\begin{equation} \label{eq1}
+	\left\{ \begin{split} \frac{dP}{dt} \approx KP\textrm{, se } P \textrm{ for pequeno, } \\
+	\textrm{Se } P \rightarrow C, \textrm{ então } \frac{dP}{dt} \rightarrow 0.
+\end{split} \right.
+\end{equation}
+sendo $K$ uma constante de proporcionalidade (positiva) e $C$ a capacidade de suporte. 
+
+A equação (\ref{eq1}) acima, nos diz é que taxa de crescimento é proporcional a $ P $ quando se inicia o processo contaminação. E quando o número de infectados se aproxima de sua capacidade de suporte $ C $, a taxa de crescimento tende a $0$ e para de crescer, se estabilizando em $ C $.
+
+A equação linear logística que conduz este modelo é dada por 
+\begin{equation} \label{eq2}
+	\frac{dP}{dt} = KP \cdot \left(  \dfrac{1-P}{C} \right).
+\end{equation}
+
+Trata-se de uma equação diferencial separável, então integrando ambos os lados da equação (\ref{eq2}), obtemos: 
+\begin{equation}
+	\int \dfrac{dP}{P\cdot \left(1-\frac{P}{C} \right)} = \int K\cdot dt.
+\end{equation}
+Daí, chegamos então na solução
+\begin{equation}
+	P(t) = \frac{C}{(1 + A \cdot e^{-Kt})}.
+\end{equation}
+
+\begin{thebibliography}{Bibliografia}
+\bibitem{Chang} CHANG, Sheryl L. et al.,  Modelling transmission and control of the COVID-19 pandemic in Australia. 23 de mar. de 2020. Disponível em: https://arxiv.org/abs/2003.10218. Acesso em: 27, set. e 2020.
+\bibitem{Danielle J Currie} CURRIE, Danielle J. et al.,  Stemming the fow: how much can the
+Australian smartphone app help to control
+COVID-19?. Jun. de 2020. Disponível em: https://www.phrp.com.au/wp-content/uploads/2020/06/PHRP3022009.pdf. Acesso em: 27, set. e 2020.
+\bibitem{Rockett,}  ROCKETT, Rebecca J. et al.,  Revealing COVID-19 transmission in Australia by SARS-CoV-2 genome sequencing and agent-based modeling. 09 de jul. de 2020. Disponível em: https://www.nature.com/articles/s41591-020-1000-7. Acesso em: 27, set. e 2020.
+\bibitem{Governo australiano} GOVERNO DA AUSTRÁLIA. National, state and territory population. Disponível em: https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/mar-2020 . Acesso em: 27, set. e 2020.
+\bibitem{Governo de NSW} GOVERNO NEW SOUTH WALES. COVID-19 in NSW. Disponível em: https://www.health.nsw.gov.au/Infectious/covid-19/Pages/recent-case-updates.aspx. Acesso em: 27, set. e 2020.
+\bibitem{Governo australiano} GOVERNO DA AUSTRÁLIA. Medicare. Disponível em: https://www.health.gov.au/health-topics/medicare. Acesso em: 27, set. e 2020.
+\bibitem{Governo Victoria} GOVERNO VICTORIA. Coronavirus (COVID-19). Disponível em: https://www.dhhs.vic.gov.au/coronavirus. Acesso em: 27, set. e 2020.
+\bibitem{Rockett,}  ROCKETT, Rebecca J. et al.,  Revealing COVID-19 transmission in Australia by SARS-CoV-2 genome sequencing and agent-based modeling. 09 de jul. de 2020. Disponível em: https://www.nature.com/articles/s41591-020-1000-7. Acesso em: 27, set. e 2020.
+\end{thebibliography}
+	
+\end{document}
